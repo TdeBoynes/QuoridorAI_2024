@@ -1,7 +1,10 @@
 import random
+from AI import AI
 
 class Player2AI:
+    def __init__(self):
+        self.ai = AI()
+
     def get_move(self, game):
-        legal_moves = game.get_legal_moves()
-        print("P2",legal_moves)
-        return (('D',))
+        move = self.ai.get_move(game)
+        return move
