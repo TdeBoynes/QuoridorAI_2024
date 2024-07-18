@@ -6,5 +6,5 @@ class Player2AI:
         self.ai = AI()
 
     def get_move(self, game):
-        move = self.ai.get_move(game)
+        move = self.ai.get_move('P2', game)
         return move
