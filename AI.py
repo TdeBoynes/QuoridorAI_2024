@@ -1,12 +1,10 @@
-# File: ai.py
-
 from random import choices
 from random import choice
 
 class AI:
     updatePath = {'P1': True, 'P2': True}
-    goal = {'P1': (0,2), 'P2': (4,2)}
     paths = {'P1': [], 'P2': []}
+    goal = {'P1': (0,2), 'P2': (4,2)}
     enemy = {'P1': 'P2', 'P2': 'P1'}
 
     def get_move(self, player, game):
